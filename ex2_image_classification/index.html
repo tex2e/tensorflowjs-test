@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Load the latest version of TensorFlow.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+</head>
+<body>
+  <p>3種類のポーズをして、それぞれを A, B, C に教師データとして加えると、自動でポーズの種類を判別するサンプル（Webカメラ使用）</p>
+  <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
+
+  <div id="console"></div>
+
+  <button id="class-a">Add A</button>
+  <button id="class-b">Add B</button>
+  <button id="class-c">Add C</button>
+
+  <!-- Load main.js after the content of the page -->
+  <script src="main.js"></script>
+</body>
+</html>
